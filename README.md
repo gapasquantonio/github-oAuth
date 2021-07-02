@@ -1,4 +1,4 @@
-# <div align="center">📋GitHub OAuth React App</div>
+# <div align="center"GitHub OAuth React App</div>
 <a href="https://compasso-uol---github.web.app/"/>
 <img src="./main.png" />
                              </a>
