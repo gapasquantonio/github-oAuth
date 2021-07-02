@@ -11,10 +11,10 @@ function App() {
           <Route path="/user/:id">
             <User />
           </Route>
-          <Route path="/home" exact>
+          <Route path="/home" >
             <Home />
           </Route>
-          <Route path="/" exact>
+          <Route path="/" >
             <About />
           </Route>
         </Switch>
