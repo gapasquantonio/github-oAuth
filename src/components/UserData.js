@@ -5,8 +5,6 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 function UserData() {
   const userData = useSelector((state) => state.githubUser);
 
-  
-
   return (
     <div>
       {userData ? (
@@ -69,8 +67,8 @@ const H4 = styled.h4`
 `;
 
 const H1 = styled.h1`
-  @media (min-width: 769px) and (max-width: 1768px){
-    font-size:xx-large;
+  @media (min-width: 769px) and (max-width: 1768px) {
+    font-size: xx-large;
   }
   @media (max-width: 768px) {
     font-size: x-large;
@@ -78,7 +76,6 @@ const H1 = styled.h1`
   @media (max-width: 468px) {
     font-size: large;
   }
-
 `;
 
 const Container = styled.div`

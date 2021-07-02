@@ -11,7 +11,6 @@ function Home(props) {
   const found = useSelector((state) => state.found);
   const [data, setData] = useState();
   //const githubUser = useSelector((state) => state.user);
-console.log(data)
   const dispatch = useDispatch();
 
   const onSearch = (x) => {
@@ -34,8 +33,7 @@ console.log(data)
       ) : (
         <>
           <UserData />
-          {data?
-          <RepoList />:<a/>}
+          {data ? <RepoList /> : <a />}
         </>
       )}
     </div>

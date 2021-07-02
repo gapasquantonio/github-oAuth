@@ -5,7 +5,11 @@ import Logo1 from "../assets/logo1.png";
 import Home from "../assets/home-icon.svg";
 import { useDispatch, useSelector } from "react-redux";
 import { auth, provider } from "../firebase";
-import { setUserLoginDetails, setSignOutState,clearUser } from "../redux/actions";
+import {
+  setUserLoginDetails,
+  setSignOutState,
+  clearUser,
+} from "../redux/actions";
 
 function Header(props) {
   const dispatch = useDispatch();
@@ -15,7 +19,6 @@ function Header(props) {
 
   useEffect(() => {
     auth.onAuthStateChanged(async (user) => {
-   
       if (user) {
         setUser(user);
         history.push("/home");

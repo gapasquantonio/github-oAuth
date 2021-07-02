@@ -49,8 +49,9 @@ const Login = () => {
           </Div>
           <SignUp onClick={handleAuth}>GO TO HOME PAGE</SignUp>
           <Description>
-          Welcome to the practice test for frontend develper position at Compasso UOL.The general idea is to create an application in which you can consume the github Api as long as you are loged in.
-           
+            Welcome to the practice test for frontend develper position at
+            Compasso UOL.The general idea is to create an application in which
+            you can consume the github Api as long as you are loged in.
           </Description>
         </CTA>
         <BgImage />
@@ -68,8 +69,9 @@ const Div = styled.div`
   }
   @media only screen and (max-width: 768px) {
     h4 {
-      font-size: 22px;
+      font-size: 17px;
     }
+    margin-bottom: 10px;
   }
 `;
 const Container = styled.section`

@@ -1,15 +1,22 @@
 import { createStore, applyMiddleware } from "redux";
 import thunk from "redux-thunk";
-import { SEARCH_USER, SET_USER, SET_REPO, SET_STARRED,SET_USER_DETAIL,SET_USER_LOGOUT } from "./actionsNames";
+import {
+  SEARCH_USER,
+  SET_USER,
+  SET_REPO,
+  SET_STARRED,
+  SET_USER_DETAIL,
+  SET_USER_LOGOUT,
+} from "./actionsNames";
 
 const initialState = {
   githubUser: "",
   found: true,
   repo: undefined,
   starred: undefined,
-  name:undefined,
-  photo:undefined,
-  email:undefined
+  name: undefined,
+  photo: undefined,
+  email: undefined,
 };
 
 function reducer(state = initialState, action) {
@@ -27,10 +34,20 @@ function reducer(state = initialState, action) {
       return { ...state, starred: action.payload };
     }
     case SET_USER_DETAIL: {
-      return { ...state, name: action.payload.name,photo: action.payload.photo,email: action.payload.email };
+      return {
+        ...state,
+        name: action.payload.name,
+        photo: action.payload.photo,
+        email: action.payload.email,
+      };
     }
     case SET_USER_LOGOUT: {
-      return { ...state, name: action.payload.name,photo: action.payload.photo,email: action.payload.email };
+      return {
+        ...state,
+        name: action.payload.name,
+        photo: action.payload.photo,
+        email: action.payload.email,
+      };
     }
     default: {
       return state;

@@ -5,7 +5,7 @@ import styled from "styled-components";
 import Repos from "./Repos";
 import UserDetailData from "./UserDetailData";
 import Starred from "./Starred";
-import { useParams,useHistory } from "react-router-dom";
+import { useParams, useHistory } from "react-router-dom";
 
 function UserDetail() {
   const dispatch = useDispatch();
@@ -15,7 +15,7 @@ function UserDetail() {
   const [clickStarred, setClickStarred] = useState(false);
   const found = useSelector((state) => state.found);
   const userData = useSelector((state) => state.githubUser);
-  
+
   useEffect(() => {
     if (!found) {
       history.push("/home");

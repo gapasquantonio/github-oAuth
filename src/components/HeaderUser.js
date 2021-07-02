@@ -5,26 +5,28 @@ import Logo1 from "../assets/logo1.png";
 import Home from "../assets/home-icon.svg";
 import { useDispatch, useSelector } from "react-redux";
 import { auth, provider } from "../firebase";
-import { setUserLoginDetails, setSignOutState,clearUser } from "../redux/actions";
+import {
+  setUserLoginDetails,
+  setSignOutState,
+  clearUser,
+} from "../redux/actions";
 
 function HeaderUser(props) {
   const dispatch = useDispatch();
   const history = useHistory();
   const userName = useSelector((state) => state.email);
   const userPhoto = useSelector((state) => state.photo);
-  
+
   useEffect(() => {
-    auth.onAuthStateChanged(async (user,) => {
-   
+    auth.onAuthStateChanged(async (user) => {
       if (user) {
         setUser(user);
-       
+
         //history.push("/home");
       } else {
         history.push("/");
       }
     });
-   
   }, [userName]);
 
   const handleAuth = () => {

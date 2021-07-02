@@ -2,10 +2,10 @@ import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector, connect } from "react-redux";
 import { getRepo } from "../redux/actions";
 import styled from "styled-components";
-import { ListItem,List,ListItemText } from '@material-ui/core'
+import { ListItem, List, ListItemText } from "@material-ui/core";
 
 function Starred(props) {
-    const {click} = props
+  const { click } = props;
   const starred = useSelector((state) => state.starred);
   const userData = useSelector((state) => state.githubUser);
   return (
@@ -21,7 +21,7 @@ function Starred(props) {
             </ListItem>
           ))
         ) : (
-          <h1/>
+          <h1 />
         )}
       </List>
     </div>

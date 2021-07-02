@@ -1,5 +1,4 @@
-import {createGlobalStyle} from 'styled-components';
-
+import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
 :root{
@@ -157,4 +156,4 @@ h6{
     }
   }
   `;
-export default GlobalStyle
+export default GlobalStyle;
