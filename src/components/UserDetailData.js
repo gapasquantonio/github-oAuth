@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { useDispatch, useSelector, connect } from "react-redux";
+import { useSelector } from "react-redux";
 import GitHubIcon from "@material-ui/icons/GitHub";
 function UserDetailData() {
   const userData = useSelector((state) => state.githubUser);

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useDispatch, useSelector} from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { getRepo, getStarred } from "../redux/actions";
 import styled from "styled-components";
 import Repos from "./Repos";
@@ -11,8 +11,6 @@ function RepoList() {
   const userData = useSelector((state) => state.githubUser);
   const [clickRepo, setClickRepo] = useState(false);
   const [clickStarred, setClickStarred] = useState(false);
-
-  console.log(UserData);
 
   useEffect(() => {
     if (userData) {
